@@ -1,0 +1,24 @@
+#notification-bar.show {
+  animation: notificationShow .5s linear forwards;
+}
+
+@keyframes notificationShow {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 20px;
+  }
+}
+#notification-bar.hide {
+  animation: notificationHide .5s linear forwards;
+}
+
+@keyframes notificationHide {
+  0% {
+    left: 20px;
+  }
+  100% {
+    left: -100%;
+  }
+}

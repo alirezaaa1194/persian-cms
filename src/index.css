@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: lalezar;
+  src: url("../public/fonts/Lalezar/Lalezar-Regular.ttf");
+}
+
+@layer base {
+  * {
+    @apply font-lalezar transition-all outline-none;
+    
+    ::-webkit-scrollbar {
+      width: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: rgb(71 26 170);
+      border-radius: 10px;
+    }
+  }
+  body {
+    @apply bg-white-50;
+  }
+
+  @media screen and (max-width: 768px) {
+    ::-webkit-scrollbar {
+      height: 10px;
+    }
+  }
+}
